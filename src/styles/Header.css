@@ -57,9 +57,11 @@
 
   /* Estilos para dispositivos móveis */
   @media (max-width: 600px) {
-    .geral {
-      flex-direction: column;
-      align-items: center;
+    .button {
+      font-size: xx-small;
+      width: 100px;
+      margin: 5px;
+      background-size: cover;
     }
 
     .geral2 {
@@ -70,6 +72,7 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 10px;
+      font-size: xx-small;
     }
 
     .infos2 {
@@ -77,11 +80,11 @@
     }
 
     .suport {
-      margin-right: 0;
+      margin-right: 30px;
     }
 
     .logo {
       margin-top: 10px;
-      width: 150px;
+      width: 130px;
     }
   }

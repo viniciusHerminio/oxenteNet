@@ -52,14 +52,22 @@
     }
 
     .price {
-      font-size: large;
+      font-size: small;
     }
 
     .cents {
       font-size: small;
+      margin-top: 40px;
     }
 
     .priceInfo {
-      font-size: medium;
+      font-size: small;
+      margin-top: 10px;
+    }
+
+    .infosExtra {
+        font-size: xx-small;
+        text-align: center;
+        margin-right: 5px;
     }
   }
