@@ -2,36 +2,42 @@ import '../styles/Header.css';
 import logo from '../images/logo.png';
 import { Link } from 'react-router-dom';
 
-function Header () {
-
+function Header() {
   return (
-    <div>
-    <div className='geral'>
-        <Link className='infos button' to={'/indicacao'}>INDICAÇÃO</Link>
-        <Link to={'/cliente'} className='infos button'>ÁREA DO CLIENTE</Link>
-        <p className='infos suport'>Suporte +55 (87) 3835-8310</p>
-    </div>
-    <div className='geral2'>
-        <Link to={'/'} ><img src={ logo } alt='logo' className='logo' />
+    <div className="header-container">
+      <Link to="/" className="logo-link">
+          <img src={logo} alt="logo" className="logo" />
         </Link>
-        <div className='infos2'>
-        <Link  className='links' to={'/suaCasa'}>
-          <h4>PARA SUA CASA</h4>
+        <div className='total-links'>
+      <div className="nav-links">
+        <Link to="/indicacao" className="nav-link button">
+          INDICAÇÃO
         </Link>
-        <Link className='links' to={'/suaEmpresa'}>
-          <h4 >PARA SUA EMPRESA</h4>
+        <Link to="/cliente" className="nav-link button">
+          ÁREA DO CLIENTE
         </Link>
-        <Link className='links' to={'/suporte'}>
-          <h4>SUPORTE</h4>
-        </Link>
-        <Link to={'/conheca'}>
-          <h4 className='links'>CONHEÇA-NOS</h4>
-        </Link>
-        <Link className='links' to={'/faleConosco'}>
-          <h4>FALE CONOSCO</h4>
-        </Link>
+        <p className="nav-link suport">Suporte +55 (87) 3835-8310</p>
+      </div>
+      <div className="logo-links">
+        <div className="nav-links2">
+          <Link to="/suaCasa" className="nav-link2">
+            PARA SUA CASA
+          </Link>
+          <Link to="/suaEmpresa" className="nav-link2">
+            PARA SUA EMPRESA
+          </Link>
+          <Link to="/suporte" className="nav-link2">
+            SUPORTE
+          </Link>
+          <Link to="/conheca" className="nav-link2">
+            CONHEÇA-NOS
+          </Link>
+          <Link to="/faleConosco" className="nav-link2">
+            FALE CONOSCO
+          </Link>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
   );
 }

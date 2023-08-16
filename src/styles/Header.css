@@ -1,90 +1,114 @@
-.geral {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-image: linear-gradient(to bottom, orangered, orange);
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, orangered, orange);
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-.infos {
-    margin: 15px;
+.logo-links {
+  margin-top: 50px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0 10px;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .suport {
-    color: white;
-    margin-right: 130px;
+  font-size: 14px;
+  margin-left: auto;
 }
 
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    background-color: #f7f7f7;
-    color: #333;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #f7f7f7;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo {
+  width: 500px;
+  height: auto;
+}
+
+.nav-links2 {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link2 {
+  margin-right: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
-  .button:hover {
-    background-color: #333;
-    color: #fff;
-    border-color: #333;
+
+  .nav-links {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .nav-link {
+    margin: 5px 0;
+  }
+
+  .suport {
+    margin: 10px 0;
+    font-size: 12px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 6px 12px;
+    width: 100%;
   }
 
   .logo {
-    margin-left: 40px;
+    margin-top: 10px;
+    width: 80px;
   }
 
-  .geral2 {
-    display: flex;
-    justify-content: space-around;
+  .nav-links2 {
+    margin-top: 20px;
+    flex-direction: column;
   }
 
-  .infos2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  .nav-link2 {
+    margin: 5px 0;
+    font-size: 12px;
   }
-
-  .links {
-    margin-right: 20px;
-    font-weight: bold;
-  }
-
-  /* Estilos para dispositivos móveis */
-  @media (max-width: 600px) {
-    .button {
-      font-size: xx-small;
-      width: 100px;
-      margin: 5px;
-      background-size: cover;
-    }
-
-    .geral2 {
-      margin-left: -50px;
-    }
-
-    .infos {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 10px;
-      font-size: xx-small;
-    }
-
-    .infos2 {
-      font-size: 8px;
-    }
-
-    .suport {
-      margin-right: 30px;
-    }
-
-    .logo {
-      margin-top: 10px;
-      width: 130px;
-    }
-  }
+}

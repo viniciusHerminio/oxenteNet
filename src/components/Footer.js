@@ -1,74 +1,64 @@
 import '../styles/Footer.css';
 
-function Header () {
+function Footer() {
   return (
-    <div className='general'>
-        <div className='infos3'>
-        <h2 className='links'>10 MEGA FIBRA</h2>
-        <p className='mensal'>Mensal</p>
-        <p className='line'>---------------------------------------</p>
-        <div className='price'>
-            <h3>R$</h3>
-            <h1>89,</h1>
-            <h4 className='cents'>90</h4>
+    <div className="container">
+      <div className="pricing">
+        <div className="plan">
+          <h2 className="title">200 MEGA FIBRA</h2>
+          <p className="subtitle">Contrate 100M, receba 200M</p>
+          <div className="price-container">
+            <span className="currency">R$</span>
+            <h1 className="main-price">89,</h1>
+            <span className="cents">90</span>
+          </div>
+          <p className="price-info">por mês</p>
+          <div className="divider"></div>
+          <p className="features">Wi-fi Turbo | Oxente.Tv| Valor já com desconto por fidelização e pagamento até o vencimento.</p>
         </div>
-        <p className='priceInfo'>por mês</p>
-        <p className='line'>---------------------------------------</p>
-        <p className='infosExtra'>10 MBPs</p>
-        <p className='infosExtra'>Navegue à vontade</p>
-        <p className='infosExtra'>Sem necessidade de linha telefônica</p>
-        <p className='infosExtra'>Suporte Personalizado</p>
+        <div className="plan">
+          <h2 className="title">400 MEGA FIBRA</h2>
+          <p className="subtitle">Contrate 200M, receba 400M</p>
+          <div className="price-container">
+            <span className="currency">R$</span>
+            <h1 className="main-price">79,</h1>
+            <span className="cents">90</span>
+          </div>
+          <p className="price-info">por mês</p>
+          <div className="divider"></div>
+          <p className="features">Wi-fi Turbo | Deezer Premium | Oxente.Tv| Valor já com desconto por fidelização e pagamento até o vencimento.</p>
         </div>
-        <div className='infos3'>
-        <h2 className='links'> 20 MEGA FIBRA</h2>
-        <p className='mensal'>Mensal</p>
-        <p className='line'>---------------------------------------</p>
-        <div className='price'>
-            <h3>R$</h3>
-            <h1>109,</h1>
-            <h4 className='cents'>90</h4>
+        <div className="plan">
+          <h2 className="title">500 MEGA FIBRA</h2>
+          <p className="subtitle">Contrate 200M, receba 500M</p>
+          <div className="price-container">
+            <span className="currency">R$</span>
+            <h1 className="main-price">99,</h1>
+            <span className="cents">90</span>
+          </div>
+          <p className="price-info">por mês</p>
+          <div className="divider"></div>
+          <p className="features">Wi-fi Turbo | Deezer Premium | Clinica digital MediQuo | Streaming vídeo Looke |
+          <br />
+          Oxente.Tv| Valor já com desconto por fidelização e pagamento até o vencimento</p>
         </div>
-        <p className='priceInfo'>por mês</p>
-        <p className='line'>---------------------------------------</p>
-        <p className='infosExtra'>20 MBPs</p>
-        <p className='infosExtra'>Navegue à vontade</p>
-        <p className='infosExtra'>Sem necessidade de linha telefônica</p>
-        <p className='infosExtra'>Suporte Personalizado</p>
+        <div className="plan">
+          <h2 className="title">600 MEGA FIBRA</h2>
+          <p className="subtitle">Contrate 300M, receba 600M</p>
+          <div className="price-container">
+            <span className="currency">R$</span>
+            <h1 className="main-price">129,</h1>
+            <span className="cents">90</span>
+          </div>
+          <p className="price-info">por mês</p>
+          <div className="divider"></div>
+          <p className="features">Super Wi-fi Mesh | Deezer Premium | Clinica digital MediQuo | Streaming vídeo 
+          <br />
+          Looke | Oxente.Tv| Valor já com desconto por fidelização e pagamento até o vencimento</p>
         </div>
-        <div className='infos3'>
-        <h2 className='links'> 30 MEGA FIBRA</h2>
-        <p className='mensal'>Mensal</p>
-        <p className='line'>---------------------------------------</p>
-        <div className='price'>
-            <h3>R$</h3>
-            <h1>129,</h1>
-            <h4 className='cents'>90</h4>
-        </div>
-        <p className='priceInfo'>por mês</p>
-        <p className='line'>---------------------------------------</p>
-        <p className='infosExtra'>30 MBPs</p>
-        <p className='infosExtra'>Navegue à vontade</p>
-        <p className='infosExtra'>Sem necessidade de linha telefônica</p>
-        <p className='infosExtra'>Suporte Personalizado</p>
-        </div>
-        <div className='infos3'>
-        <h2 className='links'> 50 MEGA FIBRA</h2>
-        <p className='mensal'>Mensal</p>
-        <p className='line'>---------------------------------------</p>
-        <div className='price'>
-            <h3>R$</h3>
-            <h1>149,</h1>
-            <h4 className='cents'>90</h4>
-        </div>
-        <p className='priceInfo'>por mês</p>
-        <p className='line'>---------------------------------------</p>
-        <p className='infosExtra'>50 MBPs</p>
-        <p className='infosExtra'>Navegue à vontade</p>
-        <p className='infosExtra'>Sem necessidade de linha telefônica</p>
-        <p className='infosExtra'>Suporte Personalizado</p>
-        </div>
-        </div>
+      </div>
+    </div>
   );
 }
 
-export default Header;
+export default Footer;

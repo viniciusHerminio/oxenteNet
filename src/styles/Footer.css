@@ -1,73 +1,103 @@
-.general {
- display: flex;
- justify-content: space-evenly;
-}
-
-.links {
-    margin: 0;
-}
-
-.infos3 {
+.container {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, orangered, orange);
+    color: white;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .pricing {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .plan {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:  50px;
-}
-
-.mensal {
-    font-size: small;
-    font-style: italic;
-}
-
-.price {
-    display: flex;
-    font-size: xx-large;
-    color: orange;
-}
-
-
-.cents {
-    margin-top: 70px;
-}
-
-.priceInfo {
-    margin-top: -40px;
-    font-size: xx-large;
-    font-weight: 400;
-}
-
-.line {
-    opacity: 0.2;
-}
-
-.infosExtra {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
     margin: 0;
-    font-size: small;
-}
-
-/* Estilos para dispositivos móveis */
-@media (max-width: 600px) {
-    .general {
-      padding: 10px;
+    font-size: 24px;
+  }
+  
+  .subtitle {
+    margin: 10px 0;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  .price-container {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .currency {
+    font-size: 18px;
+  }
+  
+  .main-price {
+    font-size: 36px;
+    color: white;
+    margin: 0;
+  }
+  
+  .cents {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  
+  .price-info {
+    font-size: 14px;
+    margin-top: 0px;
+  }
+  
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+  }
+  
+  .features {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 600px) {
+    .pricing {
+      flex-direction: column;
+      align-items: center;
     }
-
-    .price {
-      font-size: small;
+  
+    .plan {
+      margin-bottom: 20px;
     }
-
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .main-price {
+      font-size: 28px;
+    }
+  
     .cents {
-      font-size: small;
-      margin-top: 40px;
+      font-size: 14px;
+      margin-top: 8px;
     }
-
-    .priceInfo {
-      font-size: small;
-      margin-top: 10px;
-    }
-
-    .infosExtra {
-        font-size: xx-small;
-        text-align: center;
-        margin-right: 5px;
+  
+    .price-info {
+      font-size: 12px;
+      margin-top: 0px;
     }
   }
