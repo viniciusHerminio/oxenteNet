@@ -1,0 +1,65 @@
+.general {
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.links {
+    margin: 0;
+}
+
+.infos3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:  50px;
+}
+
+.mensal {
+    font-size: small;
+    font-style: italic;
+}
+
+.price {
+    display: flex;
+    font-size: xx-large;
+    color: orange;
+}
+
+
+.cents {
+    margin-top: 70px;
+}
+
+.priceInfo {
+    margin-top: -40px;
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.line {
+    opacity: 0.2;
+}
+
+.infosExtra {
+    margin: 0;
+    font-size: small;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+    .general {
+      padding: 10px;
+    }
+
+    .price {
+      font-size: large;
+    }
+
+    .cents {
+      font-size: small;
+    }
+
+    .priceInfo {
+      font-size: medium;
+    }
+  }
